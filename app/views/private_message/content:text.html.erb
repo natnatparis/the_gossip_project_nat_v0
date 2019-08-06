@@ -1,0 +1,17 @@
+<h1>PrivateMessage#content:text</h1>
+<p>Find me in app/views/private_message/content:text.html.erb</p>
+<%= form_with scope: :contact, local: true do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= form.label :text %><br>
+    <%= form.text_area :text %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
